@@ -14,11 +14,11 @@
 #' @examples
 #' krmesstocksrUI()
 
-krmesstocksrcUI <- function(tabTitle ='仓库',
+krmesstocksrcmatadataUI <- function(tabTitle ='仓库',
                     colTitles =c('操作区','显示区域'),
                     widthRates =c(4, 8),
-                    func_left = buttonkrmesstocksrcUI_left,
-                    func_right =buttonkrmesstocksrcUI_right
+                    func_left = buttonkrmesstocksrcmatadataUI_left,
+                    func_right =buttonkrmesstocksrcmatadataUI_right
 ) {
 
   
@@ -34,12 +34,12 @@ krmesstocksrcUI <- function(tabTitle ='仓库',
 #'
 #' @examples
 #' buttonUI_left()
-buttonkrmesstocksrcUI_left <- function() {
+buttonkrmesstocksrcmatadataUI_left <- function() {
 
 
   res <- tagList(
 
-    shiny::actionButton(inputId = 'btn_krmesstocksrc_view' , label = '预览表单数据'),
+    shiny::actionButton(inputId = 'btn_krmesstocksrcmatadata_view' , label = '预览表单数据'),
 
 
   )
@@ -58,9 +58,9 @@ buttonkrmesstocksrcUI_left <- function() {
 #'
 #' @examples
 #' buttonUI_right()
-buttonkrmesstocksrcUI_right <- function() {
+buttonkrmesstocksrcmatadataUI_right <- function() {
   res <- tagList(
-    tsui::uiScrollX(tsui::mdl_dataTable(id = 'krmesstocksrc_view_data', label = '出口'))
+    tsui::uiScrollX(tsui::mdl_dataTable(id = 'krmesstocksrcmatadata_view_data', label = '出口'))
   )
   return(res)
 

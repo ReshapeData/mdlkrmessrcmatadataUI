@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1687920104878.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "DBA41B41",
+    "lastKnownWriteTime" : 1687920110,
+    "last_content_update" : 1687920110233,
+    "path" : "~/app/zzy/krmessqlquery/krmessrcmatadata/mdlkrmessrcmatadataServer/DESCRIPTION",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "0,28",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

@@ -12,13 +12,13 @@
 #' @export
 #'
 #' @examples
-#' jhhrvsrcdeptUI()
+#' jhhrvsrcmatadatadeptUI()
 
-krmesflexvaluessrcUI <- function(tabTitle ='仓位值集',
+krmesflexvaluessrcmatadataUI <- function(tabTitle ='仓位值集',
                     colTitles =c('操作区','显示区域'),
                     widthRates =c(4, 8),
-                    func_left = buttonkrmesflexvaluessrcUI_left,
-                    func_right =buttonkrmesflexvaluessrcUI_right
+                    func_left = buttonkrmesflexvaluessrcmatadataUI_left,
+                    func_right =buttonkrmesflexvaluessrcmatadataUI_right
 ) {
 
   
@@ -34,12 +34,12 @@ krmesflexvaluessrcUI <- function(tabTitle ='仓位值集',
 #'
 #' @examples
 #' buttonUI_left()
-buttonkrmesflexvaluessrcUI_left <- function() {
+buttonkrmesflexvaluessrcmatadataUI_left <- function() {
 
 
   res <- tagList(
 
-    shiny::actionButton(inputId = 'btn_krmesflexvaluessrc_view' , label = '预览表单数据'),
+    shiny::actionButton(inputId = 'btn_krmesflexvaluessrcmatadata_view' , label = '预览表单数据'),
 
 
   )
@@ -58,9 +58,9 @@ buttonkrmesflexvaluessrcUI_left <- function() {
 #'
 #' @examples
 #' buttonUI_right()
-buttonkrmesflexvaluessrcUI_right <- function() {
+buttonkrmesflexvaluessrcmatadataUI_right <- function() {
   res <- tagList(
-    tsui::uiScrollX(tsui::mdl_dataTable(id = 'krmesflexvaluessrc_view_data', label = '出口'))
+    tsui::uiScrollX(tsui::mdl_dataTable(id = 'krmesflexvaluessrcmatadata_view_data', label = '出口'))
   )
   return(res)
 

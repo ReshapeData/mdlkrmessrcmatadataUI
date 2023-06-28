@@ -12,13 +12,13 @@
 #' @export
 #'
 #' @examples
-#' jhhrvsrcfnoteUI()
+#' jhhrvsrcmatadatafnoteUI()
 
-krmesprocesssrcUI <- function(tabTitle ='作业',
+krmesprocesssrcmatadataUI <- function(tabTitle ='作业',
                     colTitles =c('操作区','显示区域'),
                     widthRates =c(4, 8),
-                    func_left = buttonkrmesprocesssrcUI_left,
-                    func_right =buttonkrmesprocesssrcUI_right
+                    func_left = buttonkrmesprocesssrcmatadataUI_left,
+                    func_right =buttonkrmesprocesssrcmatadataUI_right
 ) {
 
   
@@ -34,12 +34,12 @@ krmesprocesssrcUI <- function(tabTitle ='作业',
 #'
 #' @examples
 #' buttonUI_left()
-buttonkrmesprocesssrcUI_left <- function() {
+buttonkrmesprocesssrcmatadataUI_left <- function() {
 
 
   res <- tagList(
 
-    shiny::actionButton(inputId = 'btn_krmesprocesssrc_view' , label = '预览表单数据'),
+    shiny::actionButton(inputId = 'btn_krmesprocesssrcmatadata_view' , label = '预览表单数据'),
 
 
   )
@@ -58,9 +58,9 @@ buttonkrmesprocesssrcUI_left <- function() {
 #'
 #' @examples
 #' buttonUI_right()
-buttonkrmesprocesssrcUI_right <- function() {
+buttonkrmesprocesssrcmatadataUI_right <- function() {
   res <- tagList(
-    tsui::uiScrollX(tsui::mdl_dataTable(id = 'krmesprocesssrc_view_data', label = '出口'))
+    tsui::uiScrollX(tsui::mdl_dataTable(id = 'krmesprocesssrcmatadata_view_data', label = '出口'))
   )
   return(res)
 
